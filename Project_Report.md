@@ -65,4 +65,4 @@ The value of dt for 80mph is less than 50mph because of increased randomness of 
 
 In real world, there will always be some latency because of the prediction and actuation processes. To simulate this in my project, I used the following equations -   
   
-![image.png](attachment:image.png)
+![](latency_equations.png)
