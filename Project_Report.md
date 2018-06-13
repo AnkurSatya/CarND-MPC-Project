@@ -23,7 +23,7 @@ y - vehicle's right side
 **2. Model/Update Equations**  
 Following are the equations used to formulate the vehicle's model.  
   
-![image.png](attachment:image.png)
+![](image.png)
 
 Lf is the distance from the COG of the vehicle to the front axle.  
 These equations are also used as constraint equations.
