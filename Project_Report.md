@@ -45,15 +45,15 @@ g. change in acceleration over a single timestep
  
 
 
-# Timestep(N)
+## Timestep(N)
 
 Timestep defines the number of coordinate points that the MPC will predict into the future which are used to define a curve that the vehicle will follow. But using high value for N is futile, as MPC re-evaluates the trajectory after every actuation. So, I used N = 10.
 
-# DT
+## DT
 
 DT denotes the time difference between the consecutive timesteps. I used dt = 0.01.
 
-# Tuning N and DT
+## Tuning N and DT
 
 Initially I kept the reference velocity as 50mph. For that I used N = 25 and dt = 0.1. But that resulted in huge deviation and disturbance. I believe it is mostly because of the environment at 50mph was changing fast and horizon that I used for it was large.  
 Then, I change N from 25 -> 10 and dt to 0.05. These values helped MPC in adapting to the changing environment fast which is required at high speed.  
